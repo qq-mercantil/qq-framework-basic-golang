@@ -6,8 +6,8 @@ type RepositoryException struct {
 	message string
 }
 
-func NewRepositoryException(message string) RepositoryException {
-	return RepositoryException{
+func NewRepositoryException(message string) *RepositoryException {
+	return &RepositoryException{
 		message: message,
 	}
 }

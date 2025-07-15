@@ -6,8 +6,8 @@ type RepositoryNoDataFoundException struct {
 	message string
 }
 
-func NewRepositoryNoDataFoundException(message string) RepositoryNoDataFoundException {
-	return RepositoryNoDataFoundException{
+func NewRepositoryNoDataFoundException(message string) *RepositoryNoDataFoundException {
+	return &RepositoryNoDataFoundException{
 		message: message,
 	}
 }
